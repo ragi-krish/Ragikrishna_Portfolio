@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ragikrishna Radhakrishnan — Data Engineer & Python Instructor</title>
+  <meta name="description" content="Portfolio of Ragikrishna Radhakrishnan – Data Engineer, Python Instructor, and Data Scientist based in Ras Al Khaimah, UAE." />
+
+  <!-- Inter font – weight 300 to 900 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN — utility helpers only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light-mode" id="bodyRoot">
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <header id="siteNav" role="banner">
+    <div class="nav-shell">
+
+      <!-- Brand -->
+      <a href="#top" class="nav-brand" aria-label="Home – Ragikrishna Radhakrishnan">
+        RR<span class="brand-accent">.</span>
+      </a>
+
+      <!-- Desktop links -->
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#about"         class="nav-link">About</a>
+        <a href="#skills"        class="nav-link">Skills</a>
+        <a href="#projects"      class="nav-link">Projects</a>
+        <a href="#certifications"class="nav-link">Certifications</a>
+        <a href="#experience"    class="nav-link">Experience</a>
+        <a href="#contact"       class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="nav-controls">
+        <a href="assets/Ragikrishna_Resume.pdf" download class="btn-nav-resume" aria-label="Download resume PDF">
+          <i data-lucide="download" width="14" height="14"></i>
+          Resume
+        </a>
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle dark/light mode">
+          <i data-lucide="moon"   class="ico-moon" width="17" height="17"></i>
+          <i data-lucide="sun"    class="ico-sun"  width="17" height="17"></i>
+        </button>
+        <button id="burgerToggle" class="btn-icon btn-burger" aria-label="Open menu" aria-expanded="false">
+          <i data-lucide="menu"   class="ico-menu"  width="20" height="20"></i>
+          <i data-lucide="x"      class="ico-close" width="20" height="20"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile slide-down menu -->
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#about"          class="mob-link">About</a>
+      <a href="#skills"         class="mob-link">Skills</a>
+      <a href="#projects"       class="mob-link">Projects</a>
+      <a href="#certifications" class="mob-link">Certifications</a>
+      <a href="#experience"     class="mob-link">Experience</a>
+      <a href="#contact"        class="mob-link">Contact</a>
+      <a href="assets/Ragikrishna_Resume.pdf" download class="mob-link mob-resume">
+        <i data-lucide="download" width="14" height="14"></i>
+        Download Resume
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="top" class="hero-section" aria-label="Hero – introduction">
+
+    <!-- Dot-grid texture -->
+    <div class="hero-dots" aria-hidden="true"></div>
+
+    <!-- Vertical rule decorations -->
+    <div class="rule-left"  aria-hidden="true"></div>
+    <div class="rule-right" aria-hidden="true"></div>
+
+    <div class="hero-body">
+
+      <!-- Eyebrow -->
+      <!--<p class="hero-eyebrow fade-in" style="--fi-delay:.08s">
+        <span class="eyebrow-line"></span>
+          <!--Portfolio · 2025
+        <span class="eyebrow-line"></span>
+      </p>-->
+
+      <!-- Name — weight 800 -->
+      <h1 class="hero-name fade-in" style="--fi-delay:.22s">
+        Ragikrishna<br>Radhakrishnan
+      </h1>
+
+      <!-- Staggered animated roles — NO numbering -->
+      <div class="hero-roles" role="list" aria-label="Professional roles">
+        <p class="role-line float-up" style="--fu-delay:.40s" role="listitem">DATA ENGINEER</p>
+        <p class="role-line float-up" style="--fu-delay:.56s" role="listitem">PYTHON INSTRUCTOR</p>
+        <p class="role-line float-up" style="--fu-delay:.72s" role="listitem">DATA SCIENTIST</p>
+      </div>
+
+      <!-- Sub-copy -->
+      <p class="hero-sub fade-in" style="--fi-delay:.88s">
+        <!--Building end-to-end data pipelines, ML solutions, and analytical dashboards
+        that convert raw data into clear business decisions.
+        Based in Kerala, India — available worldwide.-->
+
+        Technical specialist based in Ras Al Khaimah, UAE, dedicated to architecting robust data
+         pipelines and mentoring students in advanced programming logic. Expert in Python, SQL, 
+         and Machine Learning workflows with a focus on precision and production-grade standards.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-ctas fade-in" style="--fi-delay:1.02s">
+        <a href="#projects" class="btn-primary">
+          View Projects
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+        <a href="assets/Ragikrishna_Resume.pdf" download class="btn-outline">
+          <i data-lucide="file-text" width="16" height="16"></i>
+          Download CV
+        </a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero-stats fade-in" style="--fi-delay:1.16s" aria-label="Key stats">
+        <div class="stat">
+          <span class="stat-n">2+</span>
+          <span class="stat-l">Yrs Instructing</span>
+        </div>
+        <span class="stat-divider" aria-hidden="true"></span>
+        <div class="stat">
+          <span class="stat-n">90%</span>
+          <span class="stat-l">ML Accuracy</span>
+        </div>
+        <span class="stat-divider" aria-hidden="true"></span>
+        <div class="stat">
+          <span class="stat-n">3+</span>
+          <span class="stat-l">Live Projects</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint fade-in" style="--fi-delay:1.38s" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-h">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Text -->
+        <div class="about-copy">
+          <p  class="eyebrow reveal">About</p>
+          <h2 class="h2 reveal" id="about-h" data-rd="80">Engineering data<br>into decisions.</h2>
+          <p  class="body-text reveal" data-rd="150">
+            Technical Specialist and Python Instructor based in Ras Al Khaimah, UAE. 
+            I specialize in building robust data pipelines, predictive ML models, 
+            and interactive analytics. Whether I am architecting a SQL database or 
+            mentoring students in advanced coding logic, my goal is to deliver technical 
+            excellence that bridges the gap between theoretical data science and production-grade 
+            reality.
+          </p>
+          <p  class="body-text reveal" data-rd="210">
+            At Edoxi Training Institute I guide professionals through real-world Python and
+            data science workflows — bridging theory with production-grade practice every day.
+          </p>
+          <div class="chip-cluster reveal" data-rd="280">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">DAX</span>
+            <span class="chip">Advanced Excel</span>
+          </div>
+        </div>
+
+        <!-- Info card -->
+        <div class="reveal" data-rd="200">
+          <div class="info-card">
+            <div class="info-row">
+              <i data-lucide="map-pin" width="16" height="16" class="info-ico"></i>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-val">Ras Al Khaimah, UAE</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <i data-lucide="graduation-cap" width="16" height="16" class="info-ico"></i>
+              <div>
+                <p class="info-label">Education</p>
+                <p class="info-val">BTech — Computer Engineering</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <i data-lucide="briefcase" width="16" height="16" class="info-ico"></i>
+              <div>
+                <p class="info-label">Current Role</p>
+                <p class="info-val">Python Instructor · Edoxi Training Institute</p>
+              </div>
+            </div>
+            <div class="info-row info-row--last">
+              <i data-lucide="circle-dot" width="16" height="16" class="info-ico"></i>
+              <div>
+                <p class="info-label">Status</p>
+                <p class="info-val status-available">
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                  Open to Opportunities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
+  <section id="skills" class="section section--alt" aria-labelledby="skills-h">
+    <div class="container">
+      <p  class="eyebrow reveal">Expertise</p>
+      <h2 class="h2 reveal" id="skills-h" data-rd="60">Tools of the trade.</h2>
+      <!-- populated by JS -->
+      <div class="skills-grid" id="skillsGrid" role="list" aria-label="Skill categories"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
+  <section id="projects" class="section" aria-labelledby="projects-h">
+    <div class="container">
+      <p  class="eyebrow reveal">Selected Work</p>
+      <h2 class="h2 reveal" id="projects-h" data-rd="60">Projects that ship.</h2>
+      <p  class="section-sub reveal" data-rd="120">
+        End-to-end data &amp; ML solutions built for production.
+      </p>
+      <!-- populated by JS -->
+      <div class="projects-grid" id="projectsGrid" role="list" aria-label="Project showcase"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CERTIFICATIONS  (new section)
+  ═══════════════════════════════════════ -->
+  <section id="certifications" class="section section--alt" aria-labelledby="cert-h">
+    <div class="container">
+      <p  class="eyebrow reveal">Credentials</p>
+      <h2 class="h2 reveal" id="cert-h" data-rd="60">Certifications.</h2>
+      <p  class="section-sub reveal" data-rd="110">Verified credentials from accredited programmes.</p>
+      <!-- populated by JS -->
+      <div class="certs-grid" id="certsGrid" role="list" aria-label="Certifications"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCE & EDUCATION
+  ═══════════════════════════════════════ -->
+  <section id="experience" class="section" aria-labelledby="exp-h">
+    <div class="container">
+      <p  class="eyebrow reveal">Journey</p>
+      <h2 class="h2 reveal" id="exp-h" data-rd="60">Experience &amp; Education.</h2>
+      <div class="exp-layout">
+        <div>
+          <p class="col-label reveal">Work Experience</p>
+          <div id="expTimeline"  class="timeline" aria-label="Work experience"></div>
+        </div>
+        <div>
+          <p class="col-label reveal" data-rd="80">Education</p>
+          <div id="eduTimeline"  class="timeline" aria-label="Education history"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="section section--alt" aria-labelledby="contact-h">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info side -->
+        <div class="contact-info">
+          <p  class="eyebrow reveal">Get In Touch</p>
+          <h2 class="h2 reveal" id="contact-h" data-rd="60">Let's build<br>something great.</h2>
+          <p  class="body-text reveal" data-rd="130">
+            Open to full-time roles, freelance data projects, and instructing
+            collaborations. I respond within 24 hours.
+          </p>
+
+          <div class="social-list reveal" data-rd="200">
+            <a href="https://github.com/ragi-krish"
+               target="_blank" rel="noopener noreferrer"
+               class="social-pill" aria-label="GitHub – ragi-krish">
+              <i data-lucide="git-branch"   width="18" height="18"></i>
+              <span>github.com/ragi-krish</span>
+              <i data-lucide="external-link" width="12" height="12" class="ext"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ragikrishna-radhakrishnan-144459141/"
+               target="_blank" rel="noopener noreferrer"
+               class="social-pill" aria-label="LinkedIn profile">
+              <i data-lucide="link"          width="18" height="18"></i>
+              <span>ragikrishna-radhakrishnan</span>
+              <i data-lucide="external-link" width="12" height="12" class="ext"></i>
+            </a>
+            <a href="mailto:ragikrishnakrish01@gmail.com"
+               class="social-pill" aria-label="Email Ragikrishna">
+              <i data-lucide="mail"          width="18" height="18"></i>
+              <span>ragikrishnakrish01@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="contactForm" class="contact-form reveal" data-rd="160" action="https://formspree.io/f/mpqordly" method="POST" novalidate>
+          <div class="form-duo">
+            <div class="field-group">
+              <label class="field-label" for="fName">Full Name</label>
+              <input  id="fName"    name="name"    type="text"  class="field-input" placeholder="Your name"           autocomplete="name"  required />
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="fEmail">Email</label>
+              <input  id="fEmail"   name="email"   type="email" class="field-input" placeholder="you@example.com"     autocomplete="email" required />
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="fSubject">Subject</label>
+            <input  id="fSubject"   name="subject" type="text"  class="field-input" placeholder="What's this about?" />
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="fMessage">Message</label>
+            <textarea id="fMessage" name="message" rows="5"     class="field-input field-textarea"
+                      placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn-submit">
+            <i data-lucide="send" width="16" height="16"></i>
+            <span id="submitLabel">Send Message</span>
+          </button>
+          <div id="formSuccess" class="form-success" aria-live="polite">
+            <i data-lucide="check-circle" width="16" height="16"></i>
+            Message sent! I'll be in touch soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-name">Ragikrishna Radhakrishnan</p>
+      <p class="footer-copy">© 2025 · Built with precision</p>
+      <nav class="footer-icons" aria-label="Social links">
+        <a href="https://github.com/ragi-krish"
+           target="_blank" rel="noopener noreferrer"
+           class="footer-icon-btn" aria-label="GitHub">
+          <i data-lucide="git-branch"   width="18" height="18"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ragikrishna-radhakrishnan-144459141/"
+           target="_blank" rel="noopener noreferrer"
+           class="footer-icon-btn" aria-label="LinkedIn">
+          <i data-lucide="link" width="18" height="18"></i>
+        </a>
+        <a href="mailto:ragikrishnakrish01@gmail.com"
+           class="footer-icon-btn" aria-label="Email">
+          <i data-lucide="mail"     width="18" height="18"></i>
+        </a>
+        <a href="assets/Ragikrishna_Resume.pdf" download
+           class="footer-icon-btn" aria-label="Download Resume">
+          <i data-lucide="file-down" width="18" height="18"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back-to-top -->
+  <button id="backTopBtn" class="back-top-btn" aria-label="Back to top">
+    <i data-lucide="arrow-up" width="18" height="18"></i>
+  </button>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
